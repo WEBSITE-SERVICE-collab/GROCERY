@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Grocery</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: aqua;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    nav {
+        background-color: #df0808;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        position: relative;
+    }
+
+    nav ul li {
+        position: relative;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+
+    nav ul li:hover > a {
+        background-color: #b00606;
+        border-radius: 5px;
+    }
+
+    /* Dropdown Menu */
+    nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        background-color: #df0808;
+        padding: 10px 0;
+        min-width: 150px;
+        z-index: 100;
+        border-radius: 5px;
+    }
+
+    nav ul li:hover ul {
+        display: block;
+    }
+
+    nav ul li ul li {
+        display: block;
+        text-align: left;
+    }
+
+    nav ul li ul li a {
+        padding: 10px 20px;
+        display: block;
+        color: white;
+    }
+
+    nav ul li ul li a:hover {
+        background-color: #b00606;
+    }
+
+    h1, h3 {
+        color: #df0808;
+        margin-top: 20px;
+    }
+
+    /* Image Slider */
+    .slider {
+        width: 600px;
+        height: 500px;
+        margin: 20px auto;
+        overflow: hidden;
+        border: 5px solid #df0808;
+        border-radius: 10px;
+    }
+
+    .slides {
+        display: flex;
+        width: 2400px;
+        animation: slide 12s infinite;
+    }
+
+    .slides img {
+        width: 600px;
+        height: 500px;
+    }
+
+    @keyframes slide {
+        0%   { transform: translateX(0); }
+        25%  { transform: translateX(-600px); }
+        50%  { transform: translateX(-1200px); }
+        75%  { transform: translateX(-1800px); }
+        100% { transform: translateX(0); }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation with Dropdown -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Products ▾</a>
+        <ul>
+          <li><a href="#">Fruits</a></li>
+          <li><a href="#">Vegetables</a></li>
+          <li><a href="#">Spices</a></li>
+          <li><a href="#">Potatoes</a></li>
+          <li><a href="#">Coconuts</a></li>
+          <li><a href="#">ALSO ALL RELATED GOODS ARE AVAILABLE </a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact :0693352226 </a></li>
+    </ul>
+  </nav>
+
+  <h1>Welcome to Our Grocery</h1>
+
+  <!-- Image Slider -->
+  <div class="slider">
+    <div class="slides">
+      <img src="img-1.jpg" alt="Fruits">
+      <img src="img-2.jpg" alt="Vegetables">
+      <img src="img-3.jpg" alt="Fresh Produce">
+      <img src="img-4.jpg" alt="Coconuts">
+      <img src="img-5.jpg" alt="Fruits">
+      <img src="img-6.jpg" alt="Vegetables">
+      <img src="img-7.jpg" alt="Fresh Produce">
+      <img src="img-8.jpg" alt="Coconuts">
+      <img src="img-9.jpg" alt="Coconuts">
+
+    </div>
+  </div>
+
+  <h3>Here, You’ll Find Everything You Need</h3>
+  <ul>
+    <li>We Sell:</li>
+    <li>Potatoes</li>
+    <li>Tomatoes</li>
+    <li>Bananas</li>
+    <li>Coconuts</li>
+    <li>Onions</li>
+    <li>Bell Peppers</li>
+  </ul>
+
+  <h3>Fresh Vegetables</h3>
+  <p>Including:</p>
+  <ul>
+    <li>Amaranth (Mchicha)</li>
+    <li>Sweet Potato Leaves (Matembele)</li>
+    <li>Cabbage</li>
+    <li>Spinach</li>
+  </ul>
+
+  <h3>Fresh Fruits</h3>
+  <p>Including:</p>
+  <ul>
+    <li>Bananas</li>
+    <li>Mangoes</li>
+    <li>Avocados</li>
+    <li>Watermelons</li>
+    <li>And many more</li>
+  </ul>
+
+  <h3>Benefits of Shopping With Us:</h3>
+  <ul>
+    <li>Affordable prices and discounts for loyal customers</li>
+    <li>Friendly and trustworthy service</li>
+    <li>Delivery available in nearby areas by agreement</li>
+    <li>Always fresh produce, available daily</li>
+  </ul>
+
+  <h3>We Are Located at Ilala Market</h3>
+  <h3>Contact Us</h3>
+  <ul>
+    <li>Phone: 0693352226</li>
+    <li>Working hours: 10:00 AM – 7:00 PM daily</li>
+  </ul>
+
+</body>
+</html>
